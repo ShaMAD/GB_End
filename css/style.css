@@ -20,13 +20,14 @@ body {
     width: 100%;
     height: 798px;
     background-image:
-        url("../img/subtract0.svg"),
-        url("../img/subtract1.svg"),
-        url("../img/subtract2.svg"),
+        url("../img/rectangle0.svg"),
+        url("../img/subtract.svg"),
+        url("../img/subtract.svg"),
         url("../img/rectangle5.svg"),
         url("../img/rectangle7.svg");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: bottom left, top left, bottom right, top -17px left, bottom left;
+    background-position: bottom left, left -100px top -261px, right -358px top -38px, top -17px left, bottom left;
+    background-size: auto, 660px, 1438px, auto, auto;
 }
 
 /* .header-img1{
