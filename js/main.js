@@ -12,13 +12,10 @@ const signForm = document
   .addEventListener("input", () => {
     const userPasswordFirst = document.querySelector(".password1");
     const userPasswordSecond = document.querySelector(".password2");
-    if (userPasswordFirst.value === "") {
+    if ((userPasswordFirst.value === "") || (userPasswordFirst.value !== userPasswordSecond.value)){
       userPasswordFirst.style = "border: 2px solid red";
       userPasswordSecond.style = "border: 2px solid red";
-    } else if (userPasswordFirst.value !== userPasswordSecond.value) {
-      userPasswordFirst.style = "border: 2px solid red";
-      userPasswordSecond.style = "border: 2px solid red";
-    } else if (userPasswordFirst.value === userPasswordSecond.value) {
+    } else {
       userPasswordFirst.style = "border: 2px solid green";
       userPasswordSecond.style = "border: 2px solid green";
     }
